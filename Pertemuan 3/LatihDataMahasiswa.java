@@ -1,7 +1,7 @@
 /*
 Nim : D1041241029
 Nama : Raihan Fadhillah
-Latihan 1 tentang tipe data primitive
+Latihan 1 tentang tipe data primitive melalui simulasi data mahasiswa
 */
 
 public class LatihDataMahasiswa {
