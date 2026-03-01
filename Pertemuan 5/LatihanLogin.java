@@ -1,22 +1,18 @@
 import java.util.Scanner;
+import java.io.Console;
 
 public class LatihanLogin {
     public static void main(String[] args) {
-         Scanner input = new Scanner(System.in);
-
-        String inputUsername, inputPassword;
+        Console console = System.console();
         System.err.println("=== VALIDASI LOGIN ===");
+        
+        String inputUsername = console.readLine("Username: ");
+        char[] inputPassword = console.readPassword("Password: ****");
 
-        System.out.print("Username: ");
-        inputUsername = input.nextLine();
-
-        System.out.print("Password: ");
-        inputPassword = input.nextLine();
         System.out.println("---");
-
         if(inputUsername.equals("admin")){
             System.out.println("Username valid");
-            if(inputPassword.equals("admin123")){
+            if(String.valueOf(inputPassword).equals("admin123")){
                 System.out.println("Password benar");
                 System.out.println("LOGIN BERHASIL!");
                 System.out.println("Selamat datang, admin");
