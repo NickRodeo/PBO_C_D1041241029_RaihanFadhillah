@@ -1,0 +1,6 @@
+{
+  "java.project.referencedLibraries": {
+    "include": ["lib/**/*.jar"],
+    "exclude": ["Pertemuan 7/modules/emoji-java-5.1.1.jar"]
+  }
+}
